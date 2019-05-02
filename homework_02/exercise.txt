@@ -1,0 +1,10 @@
+1.	Explain why do we want sometimes to use setImmediate instead of using setTimeout?
+-	setTimeout schedules a callback to run after a specific time and the functions are registered in the timers phase of the event loop.
+-	setImmediate will schedule a callback to run at check phase of the event loop after IO events callbacks.
+
+2.	Explain the difference between process.nextTick and setImmediate?
+-	process.nextTick is not part of the event loop, it adds the callback into the nextTick queue. Node processes all the callback in the nextTick queue after current completes and before next event loop continues.
+-	setImmediate will schedule a callback to run at check phase of the event loop after IO events' callbacks.  
+
+3.	Name 10 core modules that Node provides by default.
+-	fs,util ,assert, dns, buffer, domain, http, https, stream, v8, url, querystring, path
