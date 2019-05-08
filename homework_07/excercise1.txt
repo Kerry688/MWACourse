@@ -1,0 +1,20 @@
+Books Collection
+{
+    _id:<ObjectId>,  
+    isbn:'3221-213-231'
+    title:'Algo',
+    authors:[ {first:'Alaa',last:'Hass'},
+               {first:'Ari',last:'DAV'}],
+      tags:['NN','BinarySearch','tree'] ,
+      copies:7,
+      borrowInfo:[ 
+                  {name:'Karim',phone:'(641)345-6729',retrnDate:'',isReturned:0}      ]   
+}
+
+Student Collection
+{
+    _id:<ObjectId>,  
+    name:'Karim',
+    email:'Karim@mum.edu',
+    phone:'(641)345-6729'    
+}
